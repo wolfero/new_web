@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 		},
 	},
 	icons: {
-		shortcut: '../../public/favicon-16x16.png',
+		shortcut: './wolfero.png',
 	},
 };
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
@@ -52,7 +52,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			<head>
 				<Analytics />
 			</head>
-			<body className={'bg-medium-red'}>
+			<body className="overflow-hidden bg-gradient-to-tl from-black via-light-red/40 to-black">
 				<Layout>{children}</Layout>
 			</body>
 		</html>
