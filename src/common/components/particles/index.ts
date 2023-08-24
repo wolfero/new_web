@@ -1,3 +1,3 @@
 import Particles from "./particles.container";
 
-export { Particles };
+export default Particles;
