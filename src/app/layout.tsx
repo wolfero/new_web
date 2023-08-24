@@ -9,15 +9,15 @@ export const metadata: Metadata = {
 		default: 'Frantisek Klucar',
 		template: 'Frantisek Klucar',
 	},
-	description: 'Backend specialist at pwc.com and self-taught Frontend trainee.',
+	description: 'Backend specialist at PWC and self-taught Frontend trainee.',
 	openGraph: {
 		title: 'Frantisek Klucar',
-		description: 'Backend specialist at pwc.com and self-taught Frontend trainee.',
+		description: 'Backend specialist at PWC and self-taught Frontend trainee.',
 		url: 'https://wolfero.dev',
 		siteName: 'Frantisek Klucar',
 		images: [
 			{
-				url: 'https://wolfero.dev/wolfero.png',
+				url: './wolfero.png',
 				width: 1920,
 				height: 1080,
 			},
@@ -52,7 +52,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			<head>
 				<Analytics />
 			</head>
-			<body className="overflow-hidden bg-gradient-to-tl from-black via-light-red/40 to-black">
+			<body className="h-screen w-screen bg-gradient-to-tl from-black via-light-red/40 to-black">
 				<Layout>{children}</Layout>
 			</body>
 		</html>
