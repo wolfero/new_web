@@ -14,7 +14,7 @@ const Footer = () => {
 	};
 
 	return (
-		<footer className="animate-fade-in p-4 border-t-2 container mx-auto flex justify-between items-center md:flex-row flex-col">
+		<footer className="p-4 border-t-2 container mx-auto flex justify-between items-center md:flex-row flex-col">
 			<div className="text-lg font-bold">
 				<p role="author">Frantisek Klucar - {new Date().getFullYear()}</p>
 			</div>

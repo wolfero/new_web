@@ -3,7 +3,7 @@ import { routes } from '@/core';
 
 const Navbar = () => {
 	return (
-		<nav className="my-8 animate-fade-in">
+		<nav className="my-8">
 			<ul className="flex items-center justify-center gap-4">
 				{routes.map((route) => (
 					<Link
