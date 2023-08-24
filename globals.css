@@ -2,8 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-	color: white;
-	background: linear-gradient(to bottom, transparent, black) black;
+@font-face {
+	font-family: 'CalSans-SemiBold';
+	src: url('/fonts/CalSans-SemiBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
 
+body {
+	font-family: 'CalSans-SemiBold', sans-serif;
+	color: white;
+	background: linear-gradient(to bottom, transparent, black) black;
+	background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+	background-attachment: fixed;
+	--tw-gradient-from: #000 var(--tw-gradient-from-position);
+	--tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
+	--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+	--tw-gradient-to: rgb(186 0 0 / 0) var(--tw-gradient-to-position);
+	--tw-gradient-stops: var(--tw-gradient-from), rgb(186 0 0 / 0.4) var(--tw-gradient-via-position),
+		var(--tw-gradient-to);
+	--tw-gradient-to: #000 var(--tw-gradient-to-position);
+	height: 100vh;
+	width: 100vw;
+}
