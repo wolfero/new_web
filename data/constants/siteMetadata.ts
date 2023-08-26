@@ -7,7 +7,7 @@ export const siteMetadata = {
     openGraph: {
         title: 'Frantisek Klucar',
         description: 'Backend specialist at PWC and self-taught Frontend trainee.',
-        url: 'https://wwolfero.dev',
+        url: 'https://www.wolfero.dev',
         siteName: 'Frantisek Klucar',
         images: [
             {
