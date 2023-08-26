@@ -1,4 +1,4 @@
-import '@/../globals.css';
+import '@/public/styles/globals.css';
 import type { Metadata } from 'next';
 import { Analytics, Layout } from '@/common/components';
 import { siteMetadata } from '@/data/constants/siteMetadata';
