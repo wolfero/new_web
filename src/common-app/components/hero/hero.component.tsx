@@ -11,15 +11,13 @@ const Hero = ({ element }: HeroProps) => {
 	};
 
 	return (
-		<article className="">
+		<article className="md:mx-10">
 			<section className="py-2 bg-red rounded-t-xl">
-				<h1 className="text-center text-2xl">{element.date}</h1>
-				<h1 className="text-center text-5xl">{element.title}</h1>
+				<h1 className="text-center text-xl md:text-2xl">{element.date}</h1>
+				<h1 className="text-center text-2xl md:text-5xl">{element.title}</h1>
 			</section>
-			<section className="markdown-body flex flex-col justify-center content-center w-full bg-medium-red/40 p-10 rounded-b-xl">
-				<div className="w-full px-4 md:px-0 md:max-w-5xl">
-					<MDXRemote {...element.mdxSource} components={MDXComponents} />
-				</div>
+			<section className="markdown-body flex flex-col justify-center content-center bg-medium-red/40 rounded-b-xl p-4">
+				<MDXRemote {...element.mdxSource} components={MDXComponents} />
 			</section>
 			<section className="flex my-8 justify-center items-center">
 				<button onClick={handleBack}>

@@ -7,7 +7,7 @@ const Pagination = ({ basePath, page, totalPages }: PaginationProps) => {
 	const paginationNumbers = getPaginationNumbers(page, totalPages);
 
 	return (
-		<div className="flex justify-center items-center space-x-4 my-12">
+		<div className="flex justify-center items-center space-x-4 my-8">
 			{/* Ir a la primera página */}
 			{page > 1 && (
 				<PageButton href={`/${basePath}/page/1`} icon={<FaAngleDoubleLeft size={35} />} />
