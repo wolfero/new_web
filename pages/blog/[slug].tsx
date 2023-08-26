@@ -3,6 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import Head from 'next/head';
 import { serialize } from 'next-mdx-remote/serialize';
+import '@/public/styles/github-markdown-dark.css';
 import { Layout } from '@/common/components';
 import { Hero } from '@/common-app/components';
 import { PostsDataProps } from '@/common-app/model';

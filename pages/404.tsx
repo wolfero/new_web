@@ -1,4 +1,4 @@
-import '@/../globals.css';
+import '@/public/styles/globals.css';
 import React from 'react';
 import Link from 'next/link';
 import { TbError404 } from 'react-icons/tb';

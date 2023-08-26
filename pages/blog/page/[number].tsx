@@ -10,7 +10,7 @@ export default function PageBlog({ posts, page, totalPages }: PageBlogProps) {
 	return (
 		<Layout>
 			<Head>
-				<title>Blog - Page {page.toString()}</title>
+				<title>Blog</title>
 				<meta name="description" content="List of Posts." />
 				<meta name="robots" content="follow, index" />
 				<link
