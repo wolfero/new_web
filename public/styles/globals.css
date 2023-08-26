@@ -27,6 +27,7 @@ body {
 	text-align: justify;
 }
 
-ol {
+ol,
+ul {
 	list-style: decimal;
 }

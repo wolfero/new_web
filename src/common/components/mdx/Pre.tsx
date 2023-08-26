@@ -15,14 +15,13 @@ const Pre = ({ children }: DetailedHTMLProps<HTMLAttributes<HTMLPreElement>, HTM
 	};
 
 	return (
-		<div ref={textInput} className="relative bg-dark/60 rounded p-4">
+		<div ref={textInput} className="flex flex-col bg-dark/60 rounded p-4">
+			<pre className="overflow-x-auto">{children}</pre>
 			<button
 				aria-label="Copy code"
 				type="button"
-				className={`absolute right-2 top-2 h-8 w-8 rounded border-2 p-1 ${
-					copied
-						? 'border-red focus:border-red focus:outline-none'
-						: 'border-white'
+				className={`self-end mt-2 h-8 w-8 rounded border-2 p-1 ${
+					copied ? 'border-red focus:border-red focus:outline-none' : 'border-white'
 				}`}
 				onClick={onCopy}
 			>
@@ -50,7 +49,6 @@ const Pre = ({ children }: DetailedHTMLProps<HTMLAttributes<HTMLPreElement>, HTM
 					)}
 				</svg>
 			</button>
-			<pre className='overflow-x-auto'>{children}</pre>
 		</div>
 	);
 };
