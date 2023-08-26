@@ -1,18 +1,15 @@
 ---
-title: "Aprendiendo React"
-date: "2021-04-10"
-preview: "/assets/blog/learning-react/react.png"
+title: 'Aprendiendo React'
+date: '2021-04-10'
+preview: '/assets/blog/learning-react/react.png'
 tags:
-    - "👨‍🎓 Learning"
-    - "📘 React"
+    - '👨‍🎓 Learning'
+    - '📘 React'
 ---
 
 En este post y los siguientes, quiero ir dejando conocimientos que voy aprendiendo sobre React, así puede ser que sea util para otras personas que buscan aprender React.
 
-<MdxImage
-    src="/assets/blog/learning-react/react.png"
-    alt="React"
-></MdxImage>
+<MdxImage src="/assets/blog/learning-react/react.png" alt="React" />
 
 ## ¿Qué es React?
 
@@ -90,10 +87,7 @@ En los hooks básicos podemos encontrar **_useState_** y **_useEffect_**:
 
 El ciclo de vida de un componente son una serie de funciones que se ejecutan en distintos momentos de la vida del componente y nos permiten realizar distintas acciones en estos momentos. El ciclo de vida se puede dividir en 3 etapas, Montaje, Actualización y Desmontaje. A su vez cada ciclo de vida, nos va a proporcionar diferentes métodos de ciclo de vida para el componente, dependiendo en qué fase se encuentre, que vamos a poder utilizar.
 
-<MdxImage
-    src="/assets/blog/learning-react/component-live-cicle.png"
-    alt="component live cicle"
-></MdxImage>
+<MdxImage src="/assets/blog/learning-react/component-live-cicle.png" alt="component live cicle" />
 
 ## Listas y keys
 
@@ -111,6 +105,7 @@ Teniendo estos dos componentes:
 function UserGreeting(props) {
   return <h1>Welcome back!</h1>;
 }
+
 function GuestGreeting(props) {
   return <h1>Please sign up.</h1>;
 }
@@ -121,10 +116,16 @@ Vamos a crear un componente Greeting que muestra cualquiera de estos componentes
 ```JavaScript
 function Greeting(props) {
   const isLoggedIn = props.isLoggedIn;
-  if (isLoggedIn) {    return <UserGreeting />;  }  return <GuestGreeting />;}
+  if (isLoggedIn) {
+    return <UserGreeting />;
+  }
+  return <GuestGreeting />;
+}
+
 ReactDOM.render(
   // Intentar cambiando isLoggedIn={true}:
-  <Greeting isLoggedIn={false} />,  document.getElementById('root'));
+  <Greeting isLoggedIn={false} />,  document.getElementById('root')
+);
 ```
 
 ## Composición vs herencia

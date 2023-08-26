@@ -1,11 +1,13 @@
 ---
-title: "Principios SOLID"
-date: "2022-03-30"
-preview: "/assets/blog/solid-principles/solid.png"
+title: 'Principios SOLID'
+date: '2022-03-30'
+preview: '/assets/blog/solid-principles/solid.png'
 tags:
-    - "👨‍🎓 Learning"
-    - "📓 SOLID principles"
+    - '👨‍🎓 Learning'
+    - '📓 SOLID principles'
 ---
+
+<MdxImage src="/assets/blog/solid-principles/solid.png" alt="solid principles" />
 
 ## ¿Qué son los principios SOLID?
 
@@ -18,11 +20,6 @@ Los principios SOLID son un conjunto de principios aplicados a la programación 
 -   **L** → Principio de Sustitución de Liskov
 -   **I** → Principio de Segregación Interfaces
 -   **D** → Principio de Inversión de Dependencias
-
-<MdxImage
-    src="/assets/blog/solid-principles/solid.png"
-    alt="solid principles"
-></MdxImage>
 
 ## Principio de Responsabilidad Única
 
@@ -39,8 +36,7 @@ El **_Principio de Responsabilidad Única_** nos ayuda enormemente a mejorar los
 Ejemplo sencillo del Principio de **_Responsabilidad Única:_**
 
 ```java
-class MyClass
-{
+class MyClass{
 	private $counter = 0;
 	public function incrementCounter(){
 		$this-> counter++;
@@ -48,8 +44,6 @@ class MyClass
 	}
 }
 ```
-
----
 
 ## Principio de Abierto-Cerrado
 
@@ -66,28 +60,33 @@ Una forma sencilla de saber que estamos violando el **_Principio de Abierto-Cerr
 Un ejemplo sencillo del **_Principio de Abierto-Cerrado:_**
 
 ```java
-enum Class VehicleType{CAR,MOTORBIKE}
+enum Class VehicleType{
+	CAR,
+	MOTORBIKE
+}
+
 interface Vehicle{
 	fun draw()
 }
+
 class Car: Vehicle{
 	override fun draw(){
 		//Draw the car
 	}
 }
+
 class Motorbike: Vehicle{
 	override fun draw(){
 		//Draw the motorbike
 	}
 }
+
 fun draw(vehicle: Vehicles){
 	vehicle.draw()
 }
 ```
 
 Como podemos apreciar en el ejemplo estamos usando también el **_Principio de Responsabilidad Única._**
-
----
 
 ## El Principio de Sustitución de Liskov
 
@@ -119,8 +118,6 @@ fun jumpHole(animal: LightweightAnimal){
 class Elephant : Animal()
 class Dog: LightweightAnimal()
 ```
-
----
 
 ## El Principio de Segregación de Interfaces
 
@@ -154,8 +151,6 @@ class File: ReadableStreamIface{
 	open function readIt(){//...}
 }
 ```
-
----
 
 ## El Principio de Inversión de Dependencias
 
