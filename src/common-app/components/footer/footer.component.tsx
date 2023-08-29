@@ -1,16 +1,14 @@
 'use client';
 import { useState } from 'react';
-import { TfiEmail } from 'react-icons/tfi';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { socialLinks } from '@/data/constants/socialLinks';
 
 const Footer = () => {
 	const [tooltipVisible, setTooltipVisible] = useState(false);
 
 	const handleEmailClick = () => {
-		navigator.clipboard.writeText(socialLinks.gmail);
+		navigator.clipboard.writeText(socialLinks[1].href);
 		setTooltipVisible(true);
-		setTimeout(() => setTooltipVisible(false), 1000);
+		setTimeout(() => setTooltipVisible(false), 2000);
 	};
 
 	return (
@@ -19,36 +17,33 @@ const Footer = () => {
 				<p role="author">Frantisek Klucar - {new Date().getFullYear()}</p>
 			</div>
 			<div className="flex space-x-4 mt-4 md:mt-0">
-				<button
-					onClick={handleEmailClick}
-					className="relative hover:text-lightViolet"
-					title="Gmail"
-				>
-					<TfiEmail size={30} />
-					{tooltipVisible && (
-						<span className="absolute -top-6 left-1/2 transform -translate-x-1/2 text-white text-xs px-2 py-1 rounded shadow-lg">
-							Copiado al portapapeles
-						</span>
-					)}
-				</button>
-
-				<a
-					href={socialLinks.github}
-					className="text-lightGreen hover:text-lightViolet"
-					target="_blank"
-					title="Github"
-				>
-					<FaGithub size={27} />
-				</a>
-
-				<a
-					href={socialLinks.linkedIn}
-					className="text-lightGreen hover:text-lightViolet"
-					target="_blank"
-					title="Linkedin"
-				>
-					<FaLinkedin size={27} />
-				</a>
+				{socialLinks.map((social, index) =>
+					social.title === 'Email' ? (
+						<button
+							key={index}
+							title={social.title}
+							onClick={handleEmailClick}
+							className="relative hover:text-red"
+						>
+							{social.icon}
+							{tooltipVisible && (
+								<span className="absolute -top-12 left-1/2 transform -translate-x-1/2 text-white bg-red text-xs px-2 py-1 rounded">
+									Copiado al portapapeles
+								</span>
+							)}
+						</button>
+					) : (
+						<a
+							key={index}
+							target="_blank"
+							title={social.title}
+							href={social.href}
+							className="hover:text-red"
+						>
+							{social.icon}
+						</a>
+					)
+				)}
 			</div>
 		</footer>
 	);
