@@ -24,7 +24,7 @@ export default function About() {
 							Frantisek Klucar
 						</h3>
 						<p>BackEnd Developer</p>
-						<p>PWC</p>
+						<p>esPublico</p>
 					</div>
 					<article className="flex flex-col gap-2 font-mono text-center lg:text-justify">
 						<p>
