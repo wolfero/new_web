@@ -13,16 +13,16 @@ export default function Home() {
 			<div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
 			<div className="my-16 text-center animate-fade-in">
 				<h2 className="text-xs md:text-sm lg:text-base text-zinc-500">
-					Hi my name is Fero, which is short for Frantisek. I&apos;m Backend specialist at{' '}
+					Hi my name is Fero, which is short for Frantisek. I&apos;m software developer at{' '}
 					<Link
 						target="_blank"
-						href="https://pwc.com"
+						href="https://www.espublico.com/"
 						className="underline duration-500 hover:text-zinc-300"
 					>
-						PWC
+						esPublico
 					</Link>
 					<br />
-					and I recently finished my master&apos;s in Frontend at{' '}
+					and I recently finished my master in Frontend at{' '}
 					<Link
 						target="_blank"
 						href="https://lemoncode.net/"
