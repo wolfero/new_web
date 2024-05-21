@@ -23,7 +23,7 @@ export default function About() {
 						<h3 className="pb-2 pt-4 text-2xl font-bold leading-8 tracking-tight">
 							Frantisek Klucar
 						</h3>
-						<p>BackEnd Developer</p>
+						<p>Software Developer</p>
 						<p>esPublico</p>
 					</div>
 					<article className="flex flex-col gap-2 font-mono text-center lg:text-justify">
@@ -40,12 +40,12 @@ export default function About() {
 							myself in Backend languages such as C# and PHP, later expanding my
 							knowledge with Java and JavaScript in the second year. Although I have
 							always had a leaning towards the Frontend, I continue to strive to
-							improve in the Backend as well. This year, I completed my
-							master&apos;s in Frontend at Lemoncode, an experience that not only
-							honed my technical skills but also provided me with a deeper
-							understanding of the best practices in the industry. Currently, I am
-							dedicating time to deepen my knowledge in React, as well as to hone my
-							skills in TDD and TypeScript in the Frontend domain.
+							improve in the Backend as well. This year, I completed my master&apos;s
+							in Frontend at Lemoncode, an experience that not only honed my technical
+							skills but also provided me with a deeper understanding of the best
+							practices in the industry. Currently, I am dedicating time to deepen my
+							knowledge in React, as well as to hone my skills in TDD and TypeScript
+							in the Frontend domain.
 						</p>
 						<p>
 							My goals for the future are clear: I aspire to become a reference Full
